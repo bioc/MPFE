@@ -29,7 +29,7 @@ The resulting reads can be mapped to a reference and methylation patterns inferr
 
 However, the bisulphite conversion is not 100\% efficient, and this introduces errors in the observed distribution of methylation patterns.
 A second source of errors is the sequencing error.
-{\tt MPFE} (for \textbf{M}ethylation \textbf{P}atterns \textbf{F}requency \textbf{E}stimation)~\cite{Lin04} calculates the estimated distribution over methylation patterns based on an input of methylation pattern count data, an incomplete conversion rate and site-dependent read error rates.
+{\tt MPFE} (for \textbf{M}ethylation \textbf{P}atterns \textbf{F}requency \textbf{E}stimation)~\cite{Lin05} calculates the estimated distribution over methylation patterns based on an input of methylation pattern count data, an incomplete conversion rate and site-dependent read error rates.
 
 The main component of the package is the function {\tt estimatePatterns()}, which generates a table of estimates $\hat\theta_i$ of the distribution over methylation patterns, and a list of patterns identified as spurious.
 Input to the function is a data frame listing the methylation patterns in the first column followed by a number of columns of count data (one column per sample).
